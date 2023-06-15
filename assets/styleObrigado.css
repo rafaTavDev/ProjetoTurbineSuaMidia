@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html{
+    font-size: 62.5%; /* 1rem == 10px */
+}
+
+:root{
+    --cor1: #fff;
+    --cor2: #000;
+    --cor3: #5b1557;
+    --cor4: #fad550;
+/*
+    --fonteGrande: 5rem;
+    --fonteSemiGrande: 4rem;
+    --fonteMedia: 3rem;
+    --fonteBotao: 3rem;
+    --fontePequena: 2rem;
+    */
+
+    --fonteGrande: 4.5rem;
+    --fonteSemiGrande: 3.8rem;
+    --fonteMedia: 2.8rem;
+    --fonteBotao: 2.8rem;
+    --fontePequena: 1.8rem;
+
+}
+
+
+.so-mobile{
+    display: none;
+}
+
+
+.botao{
+    outline: none;
+    background-color: var(--cor4);
+    color: var(--cor2);
+    font-size: var(--fonteBotao);
+    font-weight: bold;
+    padding: 2rem 4rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* OBRIGADO */
+.containerObrigado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100vh;
+    background-color: var(--cor3);
+
+}
+
+.textoObrigado{
+    font-size: var(--fonteGrande);
+    color: var(--cor1);
+    width: 70vw;
+    text-align: center;
+}
+
+
+@media(max-width: 790px){
+
+    
+    :root{
+        --fonteGrande: 2.8rem;
+        --fonteSemiGrande: 2.2rem;
+        --fonteMedia: 1.8rem;
+        --fontePequena: 1.5rem;
+        --fonteBotao: 1.7rem;
+    }
+
+    .so-pc{
+        display: none;
+    }
+
+    .so-mobile{
+        display: block;
+    }
+
+    .botao{
+        padding: 2rem 3rem;
+    }
+
+    .textoObrigado{
+        width: 90%;
+    }
+
+}
